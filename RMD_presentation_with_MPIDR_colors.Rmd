@@ -1,0 +1,192 @@
+---
+title: "A sample Xaringan RMD presentation with MPIDR color template"
+author: "Aliakbar Akbaritabar (Ali)"
+institute: |
+  | Max Planck Institute for Demographic Research (MPIDR) 
+  | Rostock, DEU
+  |
+  | akbaritabar@demogr.mpg.de
+  | (@akbaritabar on Twitter)
+output:
+  xaringan::moon_reader:
+    css: ["libs/my.css"]
+    lib_dir: libs
+    nature:
+      ratio: 16:9
+      beforeInit: "libs/macros.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+---
+
+```{r setup, echo = FALSE, cache = FALSE, results = 'hide', include=FALSE}
+library(knitr)
+require(tidyverse)
+require(kableExtra)
+require(xaringanExtra)
+options(
+  htmltools.dir.version = FALSE, tibble.width = 60, tibble.print_min = 6,
+  crayon.enabled = TRUE,
+  knitr.kable.NA = ""
+)
+knitr::opts_chunk$set(
+	echo = FALSE,
+	fig.align = "center",
+	fig.height = 8.5,
+	fig.path = "images/",
+	fig.retina = 3,
+	fig.show = "hold",
+	message = FALSE,
+	warning = FALSE,
+	cache = FALSE,
+	comment = "#>",
+	out.width = "100%"
+)
+
+```
+
+```{r logo, echo=FALSE}
+use_logo(
+  image_url = "./images/mpidr_logo_colour_en_solo.png",
+  exclude_class = c("hide_logo"),
+  width = "60px"
+)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+A footnote (with MPIDR's green color)<sup>1</sup>.
+
+.footnote[
+- [1] Shrum, W., Genuth, J., Carlson, W. B., Chompalov, I., & Bijker, W. E. (2007). Structures of Scientific Collaboration. MIT Press.
+]
+
+???
+- Presenter notes, speech, push "p" button while presenting to see.
+
+
+---
+
+### Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- "libs/macros.js" and some settings copied from [here](https://github.com/earowang/rladiesakl20) (Thanks)
+
+---
+
+## Slide with R code, output table formatted using KableExtra
+
+```{r cars, echo = TRUE}
+tibble(head(cars) * 1000) %>% 
+  kable(format.args = list(big.mark = ","), caption='') %>% 
+  kable_styling(font_size = 15) %>% 
+  row_spec(c(2, 4), bold = T, color = "blue", background = "darkgray")
+```
+
+---
+
+## Slide with Plot
+
+```{r pressure, out.width='40%'}
+plot(pressure)
+```
+
+---
+
+background-image: url(https://www.demogr.mpg.de/media/14217_main.jpg)
+background-size: 60%
+background-position: 80% 20%
+
+#### A 2 columns slide with a photo in background
+
+.left-column[
+
+Image from [here](https://www.demogr.mpg.de/en/news_events_6123/news_press_releases_4630/press/fertility_in_african_countries_remarried_women_have_less_children_9322)
+
+Main point: 
+
+- Sub point 1
+- Sub point 2
+- Sub point 3
+
+Main point: 
+
+- Sub point 1
+- Sub point 2
+
+]
+
+
+.right-column[
+
+
+]
+
+---
+
+### Data & methods (a three part slide, appearing incrementally)
+
+.pull-left[
+
+- Push "P" on keyboard to see presenter view and notes/speech
+
+- Push "C" on keyboard to clone slides for second monitor (then push "F" to go full screen)
+
+- Use Ctrl (CMD) + P to print to pdf using Goolge Chrome.
+
+]
+
+???
+- presenter note here
+
+--
+
+.pull-right[
+
+- some text here
+
+- some more text
+
+]
+
+???
+- presenter note
+
+<br/>
+
+--
+
+- some text here
+
+- some more text
+
+
+- latex formulas work $\gamma$ = $6 \times 10^{-3}$
+
+.uppernote[
+- some legend or note up here
+]
+
+
+???
+- presenter note
+
+
+---
+class: center, middle
+
+# Thank you for your attention 
+## (let me know if you extended the CSS to be better)
+
+### akbaritabar@demogr.mpg.de
+### @akbaritabar
+
+### link to paper: https://doi.org/
+
+
