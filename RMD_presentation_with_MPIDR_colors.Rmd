@@ -48,9 +48,8 @@ knitr::opts_chunk$set(
 
 ```{r logo, echo=FALSE}
 use_logo(
-  image_url = "./images/mpidr_logo_colour_en_solo.png",
-  exclude_class = c("hide_logo"),
-  width = "60px"
+  image_url = "./images/MPIDR-EN.svg",
+  exclude_class = c("hide_logo")
 )
 ```
 

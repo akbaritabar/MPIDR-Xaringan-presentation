@@ -2,11 +2,12 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
 
-body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+color: #00112b; }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz';
   font-weight: normal;
-  color: #005e5e;
+  color: #116656;
 }
 .remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; }
 
@@ -19,12 +20,12 @@ a, a > code {
   bottom: 3em;
   padding-right: 4em;
   font-size: 50%;
-  color: #005e5e;
+  color: #116656;
 }
 .remark-code-line-highlighted     { background-color: #ffff88; }
 
 .inverse {
-  background-color: #005e5e;
+  background-color: #116656;
   color: #d6d6d6;
   text-shadow: 0 0 20px #333;
 }
@@ -102,8 +103,8 @@ th, td { padding: 2px; }
 .uppernote {
   position: absolute;
   top: 3em;
-  right: 7em;
-  padding-right: 7em;
+  right: 9em;
+  padding-right: 9em;
   font-size: 40%;
-  color: #005e5e;
+  color: #116656;
 }
