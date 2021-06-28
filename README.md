@@ -8,6 +8,6 @@ Here: [https://akbaritabar.github.io/MPIDR-Xaringan-presentation/RMD_presentatio
 - "libs/macros.js" and some settings copied from [here](https://github.com/earowang/rladiesakl20) (Thanks)
 
 ## How does it look like?!
-![image](https://user-images.githubusercontent.com/15649908/123509835-144de180-d678-11eb-8009-81def95644e1.png)
+![image](./images/01_slide.PNG)
 
-![image](https://user-images.githubusercontent.com/15649908/123509850-2af43880-d678-11eb-83e4-0f3aaf18ce6c.png)
+![image](./images/02_slide.PNG)
